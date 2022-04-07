@@ -381,10 +381,14 @@
                             <use href="./images/symbol-defs.svg#icon-linkedinFtr"></use>
                         </svg>
                     </a>
-                </li>
-                
+                </li>    
             </ul>
             </div>
+            <form class="subscription-form">
+                <label for="user-subscription" class="subscription-form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                <input type="email" class="subscription-form-input" placeholder="E-mail" name="user-subscription" id="user-subscription" required>
+                <button type="submit" class="subscription-button">Подписаться</button>
+            </form>
         </div>
     </footer>
     <!-- Модальное окно -->
@@ -395,7 +399,21 @@
                     <use href="./images/symbol-defs1.svg#icon-close"></use>
                 </svg>
             </button>
+            <form action="" class="modal-form">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <label for="form-name">Имя</label>
+                <input type="text" class="modal-form-input" name="form-name" id="form-name" required>
+                <label for="form-tel">Телефон</label>
+                <input type="tel" class="modal-form-input" name="form-tel" id="form-tel" required>
+                <label for="form-email">Почта</label>
+                <input type="email" class="modal-form-input" name="form-email" id="form-email" required> 
+                <label for="user-message">Комментарий</label>
+                <textarea class="modal-form-message" name="user-message" id="user-message" placeholder="Введите текст"></textarea>                
+                <input type="checkbox" class="checkbox-form" name="user-acces" value="acces"> Соглашаюсь с условиями рассылки и принимаю<a href="#">Условия договора</a>
+                <button type="submit" class="btn-modal">Отправить</button>  
+            </form>
         </div>
+        
     </div>
      <!--Скрипт для паддинга боди, чтобы фиксированная шапка не наплывала на него -->
    <!-- <script>
