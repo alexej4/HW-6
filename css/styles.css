@@ -569,6 +569,7 @@ transform: scale(1);
   margin-top: 20px;
   width: 358px;
   height: 50px;
+  background-color: transparent;
 }
 .subscription-button {
   margin-left: 5px;
@@ -583,8 +584,13 @@ transform: scale(1);
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
   color: #FFFFFF;
+}
+.btn-icon {
+  position: relative;
+}
+.btn-icon-plain {
+  position: absolute;
 }
 
 /* Porfolio */
@@ -758,12 +764,16 @@ transform: scale(1);
   padding: 0;
   cursor: pointer;
 } 
+.modal-close-btn:hover {
+  fill: var(--logo-color);
+}
 
 /* Форма модального окна */
 .modal-form {
   /* width: 448px;
   min-height: 200px; */
-  padding: 30px 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin:  auto;
   /* box-shadow: 0 10px 10px 0 #cccccc; */
 }
@@ -771,8 +781,11 @@ transform: scale(1);
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 50px;
   border: 1px solid #303030;
+  background-color: transparent;
+  padding-left: 40px;
+  cursor: pointer;
 }
 .modal-form-message {
   width: 100%;
@@ -788,3 +801,28 @@ transform: scale(1);
 .btn-modal {
   margin-top: 30px;
 }
+.form-icon-title {
+  position: relative;
+}
+.form-name-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-100%);
+}
+.modal-form-input:hover ~ .form-name-icon {
+  fill: var(--logo-color);
+}
+.modal-form-input:hover {
+  border: 1px solid var(--logo-color);
+}
+/* .checkbox-form {
+  appearance: none;
+  position: absolute;
+} */
+/* .form-name-icon:hover {
+  fill: var(--logo-color);
+} */
+/* .modal-form-input:hover {
+  border: var(--logo-color);
+} */

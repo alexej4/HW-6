@@ -387,7 +387,12 @@
             <form class="subscription-form">
                 <label for="user-subscription" class="subscription-form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
                 <input type="email" class="subscription-form-input" placeholder="E-mail" name="user-subscription" id="user-subscription" required>
+                <div class="btn-icon">
                 <button type="submit" class="subscription-button">Подписаться</button>
+                <svg class="btn-icon-plain" width="24" height="24">
+                    <use href="./images/symbol-defs1.svg#icon-send"></use>
+                </svg>
+                </div>
             </form>
         </div>
     </footer>
@@ -401,12 +406,27 @@
             </button>
             <form action="" class="modal-form">
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                <label for="form-name">Имя</label>
-                <input type="text" class="modal-form-input" name="form-name" id="form-name" required>
-                <label for="form-tel">Телефон</label>
-                <input type="tel" class="modal-form-input" name="form-tel" id="form-tel" required>
-                <label for="form-email">Почта</label>
-                <input type="email" class="modal-form-input" name="form-email" id="form-email" required> 
+                    <label for="form-name" class="label-name">Имя</label>
+                <div class="form-icon-title">
+                    <input type="text" class="modal-form-input" name="form-name" id="form-name" required>
+                    <svg class="form-name-icon" width="18" height="18">
+                        <use href="./images/symbol-defs1.svg#icon-body"></use>
+                    </svg>
+                </div>
+                    <label for="form-tel">Телефон</label>
+                <div class="form-icon-title">
+                    <input type="tel" class="modal-form-input" name="form-tel" id="form-tel" required>
+                    <svg class="form-name-icon" width="18" height="18">
+                        <use href="./images/symbol-defs1.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                    <label for="form-email">Почта</label>
+                <div class="form-icon-title">
+                    <input type="email" class="modal-form-input" name="form-email" id="form-email" required> 
+                    <svg class="form-name-icon" width="18" height="18">
+                        <use href="./images/symbol-defs1.svg#icon-letter"></use>
+                    </svg>
+                </div>
                 <label for="user-message">Комментарий</label>
                 <textarea class="modal-form-message" name="user-message" id="user-message" placeholder="Введите текст"></textarea>                
                 <input type="checkbox" class="checkbox-form" name="user-acces" value="acces"> Соглашаюсь с условиями рассылки и принимаю<a href="#">Условия договора</a>
