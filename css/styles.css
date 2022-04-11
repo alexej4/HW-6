@@ -562,9 +562,6 @@ transform: scale(1);
 
 /* форма футера */
 
-.subscription-form {
-  justify-content: flex-end;
-}
 .subscription-form-lable {
   display: flex;
   justify-content: flex-end;
